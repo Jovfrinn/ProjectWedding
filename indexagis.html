@@ -3,13 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Abia & Jovfrin wedding</title>
+    <title>Iqbal & Suci wedding</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="stylea.css" />
   </head>
 
   <body>
@@ -19,10 +38,114 @@
     >
       <main>
         <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
-        <h1>Abia & Jovfrin</h1>
+        <h1>Iqbal & Suci</h1>
         <p>Akan Melangsungkan Resepsi Pernikahan dalam :</p>
-        <a href="#undangan" class="btn btn-lg">Lihat Undangan</a>
+        <div class="simply-countdown"></div>
+        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
       </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Iqsu Wedding</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Iqsu Wedding
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan Pada 28 Desember 2024 di Depok, Jawa Barat.</h3>
+            <p>
+              Oleh karena itu, dengan segala hormat kami bermaksut untuk
+              mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara Pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Setya Maliky Nugroho</h3>
+                <p>Bekerja sebagai guru, dan berumur 37 tahun.</p>
+                <p>
+                  Putra dari Bpk. Agus <br />
+                  dan <br />
+                  Ibu Kokom
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/pl.jpg"
+                  alt="Setya Maliky Nugroho"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/pp.jpg"
+                  alt="Suci Indah Lestari"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Suci Indah Lestari</h3>
+                <p>Bekerja sebagai guru, dan berumur 30 tahun.</p>
+                <p>
+                  Putra dari Bpk. Kokom <br />
+                  dan <br />
+                  Ibu Agus
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script
@@ -30,5 +153,21 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 12, // required
+        day: 28, // required
+        hours: 9, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "Hari", plural: "Hari" },
+          hours: { singular: "Jam", plural: "Jam" },
+          minutes: { singular: "Menit", plural: "Menit" },
+          seconds: { singular: "Detik", plural: "Detik" },
+        },
+      });
+    </script>
   </body>
 </html>
