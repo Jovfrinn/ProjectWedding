@@ -1,0 +1,57 @@
+.form-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form.group {
+  margin-right: 10px;
+}
+
+.rsvp h2 {
+  color: #fff8ea;
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.rsvp {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.rsvp {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.rsvp {
+  background-color: #594545;
+}
+
+.rsvp h2 {
+  font-size: 4.5rem;
+}
+
+/* .rsvp p {
+  color: white;
+} */
+
+.rsvp p,
+label {
+  color: #fff8ea;
+  font-family: "Merriweather";
+}
+
+.rsvp button {
+  background-color: #815b5b;
+  color: white;
+  border: 1px solid #815b5b;
+  margin-top: 10px;
+}
+
+.rsvp button:hover {
+  background-color: white;
+  color: #815b5b;
+  border: 1px solid white;
+}
