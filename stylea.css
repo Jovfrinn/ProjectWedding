@@ -58,8 +58,8 @@ body {
 }
 
 .mynavbar {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(4px) !important;
 }
 
 .mynavbar .offcanvas {
@@ -71,6 +71,7 @@ body {
   font-family: "Sacramento", cursive;
   font-size: 3.2rem;
   font-weight: bold;
+  color: #594545;
 }
 
 .mynavbar .nav-link {
@@ -78,8 +79,8 @@ body {
 }
 
 .home {
-  background-image: url(img/y.jpg);
-  background-size: cover;
+  background-image: url(img/agis.png);
+  background-size: contain;
   min-height: 100vh;
   margin-top: -6rem;
   padding-top: 15rem;
@@ -91,6 +92,7 @@ body {
   font-family: "Sacramento";
   font-size: 5rem;
   font-weight: bold;
+  color: #594545;
 }
 
 .hoe h3 {
@@ -101,7 +103,7 @@ body {
 
 .home p {
   font-size: 1.1rem;
-  color: #666;
+  color: #815B5B;
 }
 
 .home .couple {
@@ -111,14 +113,38 @@ body {
 .home .couple h3 {
   font-family: "Sacramento";
   font-size: 2.4rem;
-  color: var(--bg);
+  color: #594545;
 }
 
 .home .couple img {
   width: 100%;
 }
 
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: #594545;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(#fff8ea);
+}
+
 /* Media Query */
+/* Extra Large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
 /* Laptop */
 @media (max-width: 992px) {
   html {
@@ -127,6 +153,10 @@ body {
 
   .simply-countdown > .simply-section {
     padding: 70px;
+  }
+
+  .home .heart {
+    display: none;
   }
 }
 
