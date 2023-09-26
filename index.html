@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
     <!-- Link Css -->
-    <link rel="stylesheet" href="IndexCss/stylea.css" />  
+    <link rel="stylesheet" href="IndexCss/stylea.css" />
     <link rel="stylesheet" href="IndexCss/styleRSVP.css" />
     <link rel="stylesheet" href="IndexCss/bagianAbia.css" />
     <link rel="stylesheet" href="IndexCss/style.css">
@@ -42,7 +42,8 @@
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
     <script src="countdown/simplyCountdown.min.js"></script>
 
-
+    <!-- Animated -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
@@ -57,7 +58,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
   </head>
   <body>
-     
+    
     <section
     id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
@@ -67,13 +68,13 @@
       <h1>Iqbal & Suci</h1>
       <p>Akan Melangsungkan Resepsi Pernikahan dalam :</p>
       <div class="simply-countdown"></div>
-      <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+      <a href="#home" class="btn btn-lg mt-4">Lihat Undangan</a>
     </main>
   </section>
 
   <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
     <div class="container">
-      <a class="navbar-brand" href="#">Iqsu Wedding</a>
+      <a class="navbar-brand" href="#home">Iqsu Wedding</a>
       <button
         class="navbar-toggler border-0"
         type="button"
@@ -105,7 +106,7 @@
           <div class="navbar-nav ms-auto">
             <a class="nav-link" href="#home">Home</a>
             <a class="nav-link" href="#info">Info</a>
-            <a class="nav-link" href="#story">Story</a>
+            <a class="nav-link" href="#Story">Story</a>
             <a class="nav-link" href="#gallery">Gallery</a>
             <a class="nav-link" href="#rsvp">RSVP</a>
             <a class="nav-link" href="#gifts">Gifts</a>
@@ -118,7 +119,7 @@
   <section id="home" class="home">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
+        <div class="col-md-8 text-center"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
           <h2>Acara Pernikahan</h2>
           <h3>Diselenggarakan Pada 28 Desember 2024 di Depok, Jawa Barat.</h3>
           <p>
@@ -130,7 +131,7 @@
       </div>
 
       <div class="row couple">
-        <div class="col-lg-6">
+        <div class="col-lg-6"  data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
           <div class="row">
             <div class="col-8 text-end">
               <h3>Setya Maliky Nugroho</h3>
@@ -149,11 +150,11 @@
               />
             </div>
           </div>
-        </div>
+        </div >
+        
+        <span class="heart"><i class="bi bi-heart-fill" data-aos="zoom-in"  ></i></span>
 
-        <span class="heart"><i class="bi bi-heart-fill"></i></i></span>
-
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="100">
           <div class="row">
             <div class="col-4">
               <img
@@ -181,7 +182,7 @@
 
   <section id="info" class="info">
     <div class="continer">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" data-aos="zoom-in-up"  data-aos-duration="600" data-aos-offset="150">
       <div class="col-md-8-col-10 text-center">
         <h2>Informasi Acara</h2>
         <p class="alamat">Alamat: Gedung kologdam, kodiklat TNI AD <br> Jl. Aceh, Merdeka, Kec. Sumur Bandung, Kota Bandung</p>
@@ -190,7 +191,7 @@
       </div>
       </div>
       <div class="row justify-content-center mt-4">
-      <div class="col-md-5 col-10">
+      <div class="col-md-5 col-10" data-aos="flip-left" data-aos-duration="500" data-aos-offset="100">
         <div class="card text-center text-bg-light mb-5">
           <div class="card-header">Akad Nikah</div>
           <div class="card-body">
@@ -210,7 +211,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-5 col-10">
+    <div class="col-md-5 col-10"  data-aos="flip-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="100">
       <div class="card text-center text-bg-light">
         <div class="card-header">Resepsi</div>
         <div class="card-body">
@@ -235,12 +236,12 @@
 
   <!-- Story -->
 
-  <section class="timeline-area">
+  <section id="Story" class="timeline-area">
     <div class="main">
       <h3 class="heading">Love Story</h3>
       <div class="container1">
         <ul>
-            <li>
+            <li data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="100">
                 <h2 class="title">Awal Pertemuan</h2>
                 <img src="img/awalPertemuan.jpg" alt="" width="100%">
                 <p>Pertama kali kami bertemu dan dikenalkan sebagai teman satu kampus dan kebetulan kami masih memiliki cerita masing-masing</p>
@@ -248,7 +249,7 @@
                 <span class="date">2015</span>
                 
             </li>
-            <li>
+            <li  data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="100">
               <h2 class="title">Persahabatan</h2>
               <img src="img/persahabatan.jpg" alt="" width="100%">
               <p>Kedekatan dengan teman-teman kami membuat kami makin sering bertukar cerita satu sama lain dan membuat  kami merasa cukupdekat sebagai sahabat yang dapat dipercaya. Tapi harus di pisahkan dengan jarak sehingga kami tak dapat bertukar cerita lagi.</p>
@@ -256,7 +257,7 @@
                 <span class="date">2016 - 2017</span>
               
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="100">
             <h2 class="title">LDR</h2>
             <img src="img/ldr.jpg" alt="" width="100%">
             <p>Karena jarak yang cukup jauh, kami lama tak bertemu. Namun takdir membuat kami saling berkomunikasi lagi dan bertukar keluh kesah kami masing-masing.</p>
@@ -264,7 +265,7 @@
                 <span class="date">2018</span>
             
         </li>
-        <li>
+        <li  data-aos="fade-left data-aos-duration="500" data-aos-offset="100" data-aos-delay="100">
           <h2 class="title">Kecocokan</h2>
           <img src="img/nino.jpg" alt="" width="100%">
           <p>Karena begitu dekatnya, kami saling merasa cocok satu sama lain. Maka kami beranikan untuk mengungkapkan perasaan kami di awal tahun itu.</p>
@@ -272,7 +273,7 @@
                 <span class="date">2019</span>
           
       </li>
-      <li>
+      <li  data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="100">
         <h2 class="title">Pengujian</h2>
         <img src="img/pengujian.jpg" alt="" width="100%">
         <p>Hari-hari kami lewati bukan tanpa cobaan, terlebih predikat kami yang awalnya “sahabat” tak dapat diterima oleh beberapa orang. Tapi kami terus menjalankan hubungan kami dengan sepenuh hati.</p>
@@ -280,14 +281,14 @@
                 <span class="date">2020 - 2021</span>
         
     </li>
-    <li>
+    <li  data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="100">
       <h2 class="title">Keyakinan</h2>
       <img src="img/keyakinan.jpg" alt="" width="100%">
       <p>Setelah beberapa tahun kami saling kenal, semakin membuat kami yakin satu sama lain untuk melangkah lebih jauh. Sehingga kami yakinkan diri sampai di tahap pelamaran.</p>
       <span class="circle"></span>
       <span class="date">2022 - 2023</span>
   </li>
-  <li>
+  <li  data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="100">
     <h2 class="title">Akhir dan Awal</h2>
     <img src="img/awal.jpg" alt="" width="100%">
     <p>Akhir dari perjalanan pencarian kami masing-masing sampailah pada tahap kami untuk memulai awal cerita kami bersama sebagai keluarga yang In Syaa Allah kami yakin untuk membangunnya bersama. Semoga langkah kami selalu diberkahi dan diridhakan oleh Allah SWT.</p>
@@ -305,7 +306,7 @@
     <!-- Gallery -->
     <section id="gallery" class="gallery">
       <div class="container">
-        <div class="row justify-content-center mb-3">
+        <div class="row justify-content-center mb-3" data-aos="zoom-in-down" data-aos-duration="500" data-aos-offset="100">
           <div class="col-md-8 col-10 text-center">
             <span class="animate__animated animate__slideInRight">Our Memory</span>
             <h2 class="animate__animated animate__slideInLeft">Gallery Foto</h2>
@@ -315,32 +316,32 @@
         </div>
 
         <div class="row row-cols-md-3 row-cols-sm-2 row-cols-2 justify-content-center">
-          <div class="col mt-3 text-center">
+          <div class="col mt-3 text-center"  data-aos="flip-left" data-aos-duration="500" data-aos-offset="100">
             <a href="gambar/1.jpg" data-toggle="lightbox" data-caption="Foto 1" data-gallery="myGallery" class="animate__animated animate__zoomIn">
               <img src="gambar/1.jpg" alt="Foto 1" width="65%" class="img-fluid rounded" />
             </a>
           </div>
-          <div class="col mt-3 text-center">
+          <div class="col mt-3 text-center" data-aos="flip-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200">
             <a href="gambar/2.jpg" data-toggle="lightbox" data-caption="Foto 2" data-gallery="myGallery" class="animate__animated animate__zoomIn">
               <img src="gambar/2.jpg" alt="Foto 2" width="65%" class="img-fluid rounded" />
             </a>
           </div>
-          <div class="col mt-3 text-center">
+          <div class="col mt-3 text-center" data-aos="flip-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="300">
             <a href="gambar/4.jpg" data-toggle="lightbox" data-caption="Foto 3" data-gallery="myGallery" class="animate__animated animate__zoomIn">
               <img src="gambar/4.jpg" alt="Foto 3" width="65%" class="img-fluid rounded" />
             </a>
           </div>
-          <div class="col mt-3 text-center">
+          <div class="col mt-3 text-center"  data-aos="flip-left" data-aos-duration="500" data-aos-offset="150"
             <a href="gambar/5.jpg" data-toggle="lightbox" data-caption="Foto 4" data-gallery="myGallery" class="animate__animated animate__zoomIn">
               <img src="gambar/5.jpg" alt="Foto 4" width="65%" class="img-fluid rounded" />
             </a>
           </div>
-          <div class="col mt-3 text-center">
+          <div class="col mt-3 text-center"  data-aos="flip-left" data-aos-duration="500" data-aos-offset="150" data-aos-delay="200">
             <a href="gambar/6.jpg" data-toggle="lightbox" data-caption="Foto 5" data-gallery="myGallery" class="animate__animated animate__zoomIn">
               <img src="gambar/6.jpg" alt="Foto 5" width="65%" class="img-fluid rounded" />
             </a>
           </div>
-          <div class="col mt-3 text-center">
+          <div class="col mt-3 text-center"  data-aos="flip-left" data-aos-duration="500" data-aos-offset="150" data-aos-delay="300">
             <a href="gambar/7.jpg" data-toggle="lightbox" data-caption="Foto 6" data-gallery="myGallery" class="animate__animated animate__zoomIn">
               <img src="gambar/7.jpg" alt="Foto 6" width="65%" class="img-fluid rounded" />
             </a>
@@ -352,22 +353,22 @@
     <!-- RSVP -->
     <section id="rsvp" class="rsvp">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center"  data-aos="zoom-in" data-aos-duration="500" data-aos-offset="150">
           <div class="col-md-8 col-10 text-center">
             <h2>Konfirmasi Kehadiran</h2>
             <p>Isi form dibawah ini untuk melakukan konfirmasi kehadiran</p>
           </div>
         </div>
         <form class="row row-cols-md-auto g-3 align-items-center justify-content-center form-horizontal" action="database/act_rsvp.php" method="post" id="my-form">
-          <div class="col-12form-group">
+          <div class="col-12form-group"  data-aos="flip-up" data-aos-duration="700" data-aos-offset="150" >
             <label for="nama" class="form-label">Nama :</label>
             <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama" />
           </div>
-          <div class="col-12 form-group">
+          <div class="col-12 form-group" data-aos="flip-up" data-aos-duration="700" data-aos-offset="150" data-aos-delay="200">
             <label for="jumlah" class="form-label">Jumlah :</label>
             <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" lenght="1" value="1" />
           </div>
-          <div class="col-12 form-group">
+          <div class="col-12 form-group" data-aos="flip-up" data-aos-duration="700" data-aos-offset="150" data-aos-delay="400">
             <label for="status" class="form-label">Konfirmasi</label>
             <select name="status" id="status" class="form-select">
               <option selected>Pilih salah satu</option>
@@ -375,7 +376,7 @@
               <option value="Tidak Hadir">Tidak Hadir</option>
             </select>
           </div>
-          <div class="col-13 form-group" style="margin-top: 35px">
+          <div class="col-13 form-group" style="margin-top: 35px" data-aos="flip-up" data-aos-duration="700" data-aos-offset="150" data-aos-delay="5 00">
             <button class="btn btn-primary">Kirim</button>
           </div>
         </form>
@@ -444,6 +445,18 @@
       });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+
+   
+    <!-- Animated  -->
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2024, // required
@@ -469,12 +482,18 @@
 
      offcanvas.addEventListener('show.bs.offcanvas',function() {
       stickyTop.style.overflow = 'visible';
-     })
+     });
 
 
      offcanvas.addEventListener('hidden.bs.offcanvas',function() {
       stickyTop.style.overflow = 'hidden';
-     })
+     });
     </script>
+
+<script>
+  
+</script> 
+
+  
   </body>
 </html>

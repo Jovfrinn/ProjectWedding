@@ -7,23 +7,27 @@
   padding-bottom: 8rem;
 }
 
-.gallery, .gifts {
+.gallery,
+.gifts {
   background-color: #fff8ea;
   padding-bottom: 2rem;
 }
 
-.gallery h2, .gifts h2 {
+.gallery h2,
+.gifts h2 {
   color: #594545;
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: 5rem;
   font-weight: bold;
 }
 
 @media (max-width: 576px) {
-  .gallery h2, .gifts h2 {
+  .gallery h2,
+  .gifts h2 {
     font-size: 3rem;
   }
-  .gallery p, .gifts p {
+  .gallery p,
+  .gifts p {
     font-size: 16px !important;
   }
   .block {
@@ -33,14 +37,15 @@
 
 .gallery span {
   text-transform: uppercase;
-  color: #815B5B;
+  color: #815b5b;
   font-size: 0.9rem;
   letter-spacing: 1px;
   display: block;
   margin-bottom: 1rem;
 }
 
-.gallery p, .gifts p {
+.gallery p,
+.gifts p {
   font-size: 20px;
   font-weight: 300;
 }
@@ -96,16 +101,17 @@ footer {
 }
 
 footer a {
-  color: #9E7676;
+  color: #9e7676;
   font-weight: bold;
   text-decoration: none;
 }
 
-footer a:hover, footer i:hover {
-  color: #815B5B;
+footer a:hover,
+footer i:hover {
+  color: #815b5b;
 }
 
 footer li {
   list-style: none;
   display: inline;
-} 
+}

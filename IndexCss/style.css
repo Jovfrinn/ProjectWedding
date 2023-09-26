@@ -1,5 +1,5 @@
 .info {
-  background-image: url(/img/bck1.jpg);
+  background-color: #fff8ea;
   color: rgb(18, 17, 17);
   padding-top: 10rem;
   padding-bottom: 8rem;
@@ -22,20 +22,27 @@
   font-weight: 300;
 }
 
+.btn-light {
+  background-color: #815b5b;
+  color: #fff8ea;
+}
+
 .info .card {
-  background-color: rgba(240, 99, 99, 0.306) !important;
+  background-color: #815b5b !important;
   color: black !important;
   border: 1px solid #060505;
 }
 
 .info .card-header {
-  border-bottom: 1px solid #010101;
+  border-bottom: 1px solid #030303;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  color: #fff8ea;
 }
 
 .info .card-body {
   font-size: 0.9rem;
+  color: #fff8ea;
 }
 
 .info .card-footer {
@@ -49,8 +56,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-.timeline-area {
-  background-color: #ffffff;
+
+.timeline-area .main {
+  background-color: #fff8ea;
 }
 .timeline-area h3 {
   font-family: mukta;
@@ -118,19 +126,20 @@
   float: left;
   clear: right;
   transform: translateX(-30px);
-  text-align: right;
+  text-align: left;
 }
 .container ul li:nth-child(odd),
 .container1 ul li:nth-child(odd),
 .date {
-  right: 20px;
+  right: 50px;
 }
 
 .container ul li:nth-child(even),
 .container1 ul li:nth-child(even) {
   float: right;
   clear: left;
-  transform: translateX(30px);
+  left: 35px;
+  transform: translateX(35px);
 }
 
 .container ul li:nth-child(7),
@@ -196,7 +205,7 @@ ul li .date {
 }
 .container ul li:nth-child(even),
 .container1 ul li:nth-child(even) .circle {
-  left: -28px;
+  left: -34px;
   transform: translate(-50%, -50%);
 }
 
@@ -206,40 +215,50 @@ ul li .date {
     width: 85%;
   }
 }
-@media screen and (max-width: 933px) {
+@media screen and (max-width: 633px) {
   .container,
   .container1 {
     width: 80%;
   }
   .container::after,
   .container1::after {
-    left: 0%;
+    left: -3%;
   }
   .container ul li,
   .container1 ul li {
-    width: 100%;
+    width: 80%;
     float: none;
     clear: none;
     margin-bottom: 80px;
+    /* margin-left: 50px; */
   }
   .container ul li:nth-child(odd),
   .container1 ul li:nth-child(odd) {
     transform: translateX(0);
     text-align: left;
+    margin-left: 56px;
+  }
+
+  .container ul li:nth-child(odd),
+  .container1 ul li:nth-child(odd) .date {
+    left: 5px;
+    margin-bottom: 10px;
   }
   .container ul li:nth-child(odd),
-  .container1 ul li:nth-child(odd),
-  .date {
-    left: 20px;
-  }
-  .container ul li:nth-child(odd),
-  .container1 ul li:nth-child(odd),
-  .circle {
-    left: -25px;
+  .container1 ul li:nth-child(odd) .circle {
+    left: -37px;
     transform: translate(-50%, -50%);
   }
   .container ul li:nth-child(even),
   .container1 ul li:nth-child(even) {
     transform: translateX(0);
+    text-align: left;
+    margin-right: 106px;
+  }
+
+  .container ul li:nth-child(even),
+  .container1 ul li:nth-child(even) .circle {
+    right: -200px;
+    transform: translate(-50%, -50%);
   }
 }
