@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --gold: #d2ac47;
   --bg: #0a0a0a;
@@ -8,6 +11,7 @@ body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
   min-height: 4000px;
+  overflow-x: hidden;
 }
 
 .hero::before {
@@ -47,14 +51,16 @@ body {
 }
 
 .hero a {
-  color: var(--gold);
-  background-color: white;
+  color: #815b5b;
+  background-color: #fff8ea;
   box-shadow: var(--shadow);
+  text-transform: uppercase;
+  font-size: 17px;
 }
 
 .hero a:hover {
-  background-color: var(--gold);
-  color: white;
+  background-color: #815b5b;
+  color: #fff8ea;
 }
 
 .mynavbar {

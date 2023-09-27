@@ -48,10 +48,13 @@ label {
   color: white;
   border: 1px solid #815b5b;
   margin-top: 10px;
+  font-family: "Merriweather";
 }
 
 .rsvp button:hover {
-  background-color: white;
-  color: #815b5b;
-  border: 1px solid white;
+  background-color: #9e7676;
+  color: white;
+  border: 1px solid #9e7676;
+  height: 45px;
+  width: 70px;
 }

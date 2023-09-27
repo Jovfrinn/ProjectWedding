@@ -30,7 +30,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Sacramento&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Niconne&family=Sacramento&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Mukta:wght@200&family=Niconne&family=Sacramento&display=swap" rel="stylesheet">
-
+    
+  
 
 
     
@@ -57,22 +58,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
   </head>
-  <body>
-    
-    <section
+  <body> <section
     id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
   >
     <main>
       <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
       <h1>Iqbal & Suci</h1>
-      <p>Akan Melangsungkan Resepsi Pernikahan dalam :</p>
+      <p></p>
       <div class="simply-countdown"></div>
-      <a href="#home" class="btn btn-lg mt-4">Lihat Undangan</a>
+      <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()"><i class="bi bi-envelope-open-heart"> Lihat Undangan</i></a>
     </main>
   </section>
 
-  <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+  <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar" data-aos="fade-down" data-aos-duration="1000">
     <div class="container">
       <a class="navbar-brand" href="#home">Iqsu Wedding</a>
       <button
@@ -265,7 +264,7 @@
                 <span class="date">2018</span>
             
         </li>
-        <li  data-aos="fade-left data-aos-duration="500" data-aos-offset="100" data-aos-delay="100">
+        <li  data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="100">
           <h2 class="title">Kecocokan</h2>
           <img src="img/nino.jpg" alt="" width="100%">
           <p>Karena begitu dekatnya, kami saling merasa cocok satu sama lain. Maka kami beranikan untuk mengungkapkan perasaan kami di awal tahun itu.</p>
@@ -331,7 +330,7 @@
               <img src="gambar/4.jpg" alt="Foto 3" width="65%" class="img-fluid rounded" />
             </a>
           </div>
-          <div class="col mt-3 text-center"  data-aos="flip-left" data-aos-duration="500" data-aos-offset="150"
+          <div class="col mt-3 text-center"  data-aos="flip-left" data-aos-duration="500" data-aos-offset="150">
             <a href="gambar/5.jpg" data-toggle="lightbox" data-caption="Foto 4" data-gallery="myGallery" class="animate__animated animate__zoomIn">
               <img src="gambar/5.jpg" alt="Foto 4" width="65%" class="img-fluid rounded" />
             </a>
@@ -359,7 +358,7 @@
             <p>Isi form dibawah ini untuk melakukan konfirmasi kehadiran</p>
           </div>
         </div>
-        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center form-horizontal" action="database/act_rsvp.php" method="post" id="my-form">
+        <form id="my-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center form-horizontal" action="database/act_rsvp.php" method="post">
           <div class="col-12form-group"  data-aos="flip-up" data-aos-duration="700" data-aos-offset="150" >
             <label for="nama" class="form-label">Nama :</label>
             <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama" />
@@ -376,8 +375,8 @@
               <option value="Tidak Hadir">Tidak Hadir</option>
             </select>
           </div>
-          <div class="col-13 form-group" style="margin-top: 35px" data-aos="flip-up" data-aos-duration="700" data-aos-offset="150" data-aos-delay="5 00">
-            <button class="btn btn-primary">Kirim</button>
+          <div class="col-13 form-group" style="margin-top: 35px" data-aos="flip-up" data-aos-duration="700" data-aos-offset="150" data-aos-delay="500">
+            <button class="btn btn--bs-light-border-subtle">Kirim</button>
           </div>
         </form>
       </div>
@@ -386,14 +385,14 @@
     <!-- Gift -->
     <section id="gifts" class="gifts">
       <div class="container">
-        <div class="row justify-content-center pt-5">
+        <div class="row justify-content-center pt-5" data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="100">
           <div class="col-md-8 col-10 text-center">
             <span class="animate__animated animate__slideInRight">Ungkapan Terima Kasih</span>
             <h2 class="animate__animated animate__slideInLeft">Kirim Hadiah</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quas vero est obcaecati! Blanditiis minima ipsum amet.</p>
           </div>
         </div>
-        <div class="row justify-content-center text-center">
+        <div class="row justify-content-center text-center"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
           <div class="col-xs-6 col-sm-6 col-lg-7">
             <p class="list-group list-group-flush p-4">
               <p class="list-group-item">
@@ -413,7 +412,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer  data-aos="fade-up" data-aos-duration="600" data-aos-offset="50" data-aos-delay="500">
       <div class="container">
         <div class="row">
           <div class="col text-center mt-3">
@@ -428,22 +427,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-      window.addEventListener("load", function () {
-        const form = document.getElementById("my-form");
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const data = new FormData(form);
-          const action = e.target.action;
-          fetch(action, {
-            method: "POST",
-            body: data,
-          }).then(() => {
-            alert("Success!");
-          });
-        });
-      });
-    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -456,6 +440,18 @@
         once: true,
       });
     </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+<script>
+  gsap.registerPlugin(TextPlugin);
+  gsap.to('.hero main p',{duration: 2, delay: 1, text:'Akan Melangsungkan Resepsi Pernikahan dalam :'})
+  gsap.from('.hero main h4', {duration: 1, y: -100, opacity: 0});
+  gsap.from('.hero main h1', {duration: 1, x: -100, opacity: 0, delay: 0.5});
+  gsap.from('.hero main p', {duration: 1, x: 100, opacity: 0, delay: 0.5});
+  gsap.from('.simply-countdown', {height: 0, duration: 1, rotateX: 180, opacity: 0, height:1, delay: 1.5});
+  gsap.from('.hero .btn-lg',{height:0, duration: 0.6, delay: 2, opacity: 0})
+</script>
 
     <script>
       simplyCountdown(".simply-countdown", {
@@ -489,11 +485,50 @@
       stickyTop.style.overflow = 'hidden';
      });
     </script>
+     
+  
+
+    <script>
+   const rootElement = document.querySelector(":root");
+
+  function disableScroll(){
+   scrollTop = window.pageYOffset || document.documentElement.scrollTop
+   scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
+
+   window.onscroll = function() {
+    window.scrollTo(screenTop,screenLeft);
+   }
+
+  rootElement.style.scrollBehavior = 'auto';
+}
+function enableScroll() {
+  window.onscroll = function () {
+      rootElement.style.scrollBehavior = 'smooth';
+      localStorage.setItem('opened', 'true');
+    }
+  }
+ if(!localStorage.getItem('opened')){
+   disableScroll(); 
+
+ }
+  </script> 
 
 <script>
-  
-</script> 
-
+  window.addEventListener("load", function () {
+    const form = document.getElementById("my-form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+        method: "POST",
+        body: data,
+      }).then(() => {
+        alert("Success!");
+      });
+    });
+  });
+</script>
   
   </body>
 </html>

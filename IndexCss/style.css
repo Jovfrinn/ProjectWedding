@@ -3,6 +3,7 @@
   color: rgb(18, 17, 17);
   padding-top: 10rem;
   padding-bottom: 8rem;
+  margin-bottom: 30px;
 }
 
 .info h2,
@@ -59,6 +60,9 @@
 
 .timeline-area .main {
   background-color: #fff8ea;
+  margin-top: -100px;
+  padding-top: 100px;
+  padding-bottom: 20px;
 }
 .timeline-area h3 {
   font-family: mukta;
