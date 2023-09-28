@@ -19,6 +19,7 @@
 .rsvp {
   padding-top: 10rem;
   padding-bottom: 8rem;
+  margin-top: 0%;
 }
 .rsvp {
   font-size: 1rem;
@@ -37,10 +38,18 @@
   color: white;
 } */
 
-.rsvp p,
-label {
+.rsvp p {
+  text-transform: uppercase;
   color: #fff8ea;
-  font-family: "Merriweather";
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.rsvp label {
+  color: #fff8ea;
+  font-family: "Lato";
 }
 
 .rsvp button {
@@ -48,7 +57,7 @@ label {
   color: white;
   border: 1px solid #815b5b;
   margin-top: 10px;
-  font-family: "Merriweather";
+  font-family: "Lato";
 }
 
 .rsvp button:hover {

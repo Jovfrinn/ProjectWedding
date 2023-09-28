@@ -21,10 +21,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/hha.jpg);
+  background-image: url(../img/bck3Prewed.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
+  filter: blur(2px);
 }
 
 .hero {
@@ -85,8 +86,8 @@ body {
 }
 
 .home {
-  background-image: url(../img/agis.png);
-  background-size: contain;
+  background-image: url(../img/bckhome4.jpg);
+  background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
   padding-top: 15rem;
@@ -110,6 +111,11 @@ body {
 .home p {
   font-size: 1.1rem;
   color: #815b5b;
+}
+
+.img-mus {
+  width: 40px;
+  height: 40px;
 }
 
 .home .couple {
@@ -170,6 +176,11 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 65%;
+    overflow-x: hidden;
+  }
+
+  .simply-countdown {
+    margin-right: 100px;
   }
 
   .simply-countdown > .simply-section {

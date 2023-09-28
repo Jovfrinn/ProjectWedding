@@ -1,35 +1,45 @@
 .info {
-  background-color: #fff8ea;
+  background-color: #594545;
   color: rgb(18, 17, 17);
   padding-top: 10rem;
   padding-bottom: 8rem;
   margin-bottom: 30px;
 }
 
-.info h2,
+.info h2 {
+  color: #fff8ea;
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
 .story h2 {
   color: rgb(46, 41, 41);
-  font-family: "cookie";
+  font-family: "Sacramento";
   font-size: 5rem;
   font-weight: bold;
 }
 
 .info .alamat {
   font-size: 1.1rem;
+  font-family: "Lato";
+  color: #fff8ea;
 }
 
 .info .description {
   font-size: 1rem;
   font-weight: 300;
-}
-
-.btn-light {
-  background-color: #815b5b;
+  font-family: "Lato";
   color: #fff8ea;
 }
 
+.btn-light {
+  background-color: #fff8ea;
+  color: #815b5b;
+}
+
 .info .card {
-  background-color: #815b5b !important;
+  background-color: #9e7676 !important;
   color: black !important;
   border: 1px solid #060505;
 }
@@ -59,13 +69,14 @@
 }
 
 .timeline-area .main {
-  background-color: #fff8ea;
+  background-image: url(../img/bckInfo5.jpg);
+  background-size: cover;
   margin-top: -100px;
-  padding-top: 100px;
+  padding-top: 300px;
   padding-bottom: 20px;
 }
-.timeline-area h3 {
-  font-family: mukta;
+.timeline-area h1 {
+  font-family: "Sacramento";
   font-size: 5rem;
   font-weight: bold;
 }
@@ -79,18 +90,18 @@
   place-items: center;
 }
 .main .heading {
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 60px;
   color: #594545;
   position: relative;
   margin-bottom: 80px;
+  margin-left: 25px;
 }
 .heading::after {
   position: absolute;
   content: "";
   width: 50%;
   height: 3px;
-  left: 50%;
+  left: 30%;
   bottom: -5px;
   background-image: linear-gradient(to right, rgba(18, 13, 13, 0.2), rgba(125, 5, 5, 0.594));
   transform: translateX(-25px);
@@ -219,7 +230,7 @@ ul li .date {
     width: 85%;
   }
 }
-@media screen and (max-width: 633px) {
+@media screen and (max-width: 500px) {
   .container,
   .container1 {
     width: 80%;
