@@ -22,6 +22,10 @@
   padding-bottom: 2rem;
 }
 
+.gifts {
+  padding-bottom: 10px;
+}
+
 .gallery h2,
 .gifts h2 {
   color: #594545;
@@ -30,19 +34,6 @@
   font-weight: bold;
 }
 
-@media (max-width: 576px) {
-  .gallery h2,
-  .gifts h2 {
-    font-size: 3rem;
-  }
-  .gallery p,
-  .gifts p {
-    font-size: 16px !important;
-  }
-  .block {
-    font-size: 13px;
-  }
-}
 
 .gallery span {
   text-transform: uppercase;
@@ -55,7 +46,7 @@
 
 .gallery p,
 .gifts p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -124,3 +115,19 @@ footer li {
   list-style: none;
   display: inline;
 }
+
+  @media (max-width: 576px) {
+    .gallery h2,
+    .gifts h2 {
+      font-size: 44px !important;
+    }
+
+    .gallery p,
+    .gifts p {
+      font-size: 14px !important;
+    }
+
+    .block {
+      font-size: 13px;
+    }
+  }

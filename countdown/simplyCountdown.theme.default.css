@@ -15,6 +15,7 @@
   background: #815b5b;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 50%;
+  
 }
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
@@ -26,9 +27,19 @@
   font-size: 1.6rem;
 }
 
-@media screen and (max-width: 500px) {
-  .simply-countdown {
-    margin-left: 8px;
-    padding-left: 43px;
+@media screen and (max-width: 576px) {
+  .simply-countdown > .simply-section {
+    width: 72px;
+    height: 72px;
+    padding: 10px;
+    font-size: 14px;
+    
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 14px;
+  }
+
+  .lihat {
+    padding-top: 10px;
   }
 }

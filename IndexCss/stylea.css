@@ -15,13 +15,13 @@ body {
 }
 
 .hero::before {
+  background-image: url(../img/bck3Prewed.jpg);
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/bck3Prewed.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -69,6 +69,11 @@ body {
   backdrop-filter: blur(4px) !important;
 }
 
+.sticky-top {
+  position: -webkit-sticky !important;
+  /* position: sticky !important; */
+}
+
 .mynavbar .offcanvas {
   height: 100vh;
 }
@@ -76,7 +81,7 @@ body {
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
   font-family: "Sacramento", cursive;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #594545;
 }
@@ -102,7 +107,7 @@ body {
   color: #594545;
 }
 
-.hoe h3 {
+.home h3 {
   color: #444;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -188,27 +193,6 @@ body {
     margin: 5px;
   }
 
-  .mynavbar .nav-link {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .sticky-top {
-    overflow: hidden;
-  }
-}
-
-/* mobile phone */
-@media (max-width: 476px) {
-  html {
-    font-size: 40%;
-  }
-
-  .simply-countdown > .simply-section {
-    padding: 45px;
-    margin: 3px;
-  }
-
   /* .mynavbar .nav-link {
     font-size: 2rem;
     text-align: center;
@@ -217,4 +201,53 @@ body {
   .sticky-top {
     overflow: hidden;
   } */
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 40%;
+    /* overflow: hidden; */
+  }
+
+  .simply-countdown > .simply-section {
+    /* padding: 45px; */
+    margin: 3px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .offcanvas-body, .offcanvas-header {
+    background-color: #fff8ea;
+  }
+
+  .hero {
+    font-size: 16px;
+  }
+  .hero h1{
+    font-size: 60px;
+  }
+
+  .home h2 {
+    font-size: 40px !important;
+  }
+
+  .bio-full {
+    margin-bottom: 20px !important;
+  }
+
+  .biodata h3 {
+    font-size: 26px !important;
+  }
+
+  .biodata p, .home p {
+    font-size: 10px !important;
+  }
 }

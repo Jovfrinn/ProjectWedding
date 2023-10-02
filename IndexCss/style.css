@@ -1,7 +1,7 @@
 .info {
   background-color: #594545;
   color: rgb(18, 17, 17);
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: 8rem;
   margin-bottom: 30px;
 }
@@ -230,7 +230,7 @@ ul li .date {
     width: 85%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   .container,
   .container1 {
     width: 80%;
@@ -251,12 +251,12 @@ ul li .date {
   .container1 ul li:nth-child(odd) {
     transform: translateX(0);
     text-align: left;
-    margin-left: 56px;
+    margin-left: 66px;
   }
 
   .container ul li:nth-child(odd),
   .container1 ul li:nth-child(odd) .date {
-    left: 5px;
+    /* left: 5px; */
     margin-bottom: 10px;
   }
   .container ul li:nth-child(odd),
@@ -268,12 +268,40 @@ ul li .date {
   .container1 ul li:nth-child(even) {
     transform: translateX(0);
     text-align: left;
-    margin-right: 106px;
+    margin-right: 82px;
   }
 
   .container ul li:nth-child(even),
   .container1 ul li:nth-child(even) .circle {
     right: -200px;
     transform: translate(-50%, -50%);
+  }
+
+  .info h2{
+    font-size: 36px;
+  }
+  
+  .alamat{
+    font-size: 14px !important;
+  }
+
+  .info a, .description {
+    font-size: 12px !important;
+  }
+
+  .card-header {
+    font-size: 14px;
+  }
+
+  .card-body {
+    font-size: 12px !important ;
+  }
+
+  .card-footer{
+    font-size: 10px !important ;
+  }
+
+  .timeline-area h1 {
+    font-size: 42px !important;
   }
 }

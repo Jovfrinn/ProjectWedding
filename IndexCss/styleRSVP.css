@@ -17,10 +17,11 @@
 }
 
 .rsvp {
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 9rem;
   margin-top: 0%;
 }
+
 .rsvp {
   font-size: 1rem;
   font-weight: 300;
@@ -66,4 +67,19 @@
   border: 1px solid #9e7676;
   height: 45px;
   width: 70px;
+}
+
+@media screen and (max-width: 576px) {
+  .rsvp h2 {
+    font-size: 32px;
+  }
+
+  .rsvp p {
+    font-size: 8px;
+  }
+
+  .rsvp button {
+    font-size: 10px;
+  }
+
 }
